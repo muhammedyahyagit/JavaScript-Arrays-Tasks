@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h3 {
+            color: #333;
+            background-color: #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        p {
+            color: #555;
+            margin: 10px 0 20px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <script>
+        // Task 1: map() Method
+        let num = [10, 20, 30, 40, 50];
+        let multiplyNum = num.map(num => num * 5);
+        document.write("<h3>Task 1: map() Method:</h3>");
+        document.write("<p>" + multiplyNum.join(", ") + "</p>");
+
+        // Task 2: filter() Method
+        let nums = [15, 26, 33, 40, 18, 29];
+        let evenNums = nums.filter(nums => nums % 2 === 0);
+        document.write("<h3>Task 2: filter() Method:</h3>");
+        document.write("<p>" + evenNums.join(", ") + "</p>");
+
+        // Task 3: reduce() Method
+        let myReduceNumbers = [5, 10, 15, 20];
+        let reduceOfNumber = myReduceNumbers.reduce((acc, myReduceNumbers) => acc + myReduceNumbers, 0);
+        document.write("<h3>Task 3: reduce() Method:</h3>");
+        document.write("<p>" + reduceOfNumber + "</p>");
+
+        // Task 4: find() Method
+        let numbers = [7, 14, 21, 28, 35];
+        let findNumbers = numbers.find(numbers => numbers > 20);
+        document.write("<h3>Task 4: find() Method:</h3>");
+        document.write("<p>" + findNumbers + "</p>");
+
+        // Task 5: findIndex() Method
+        let myNumbers = [3, 5, 7, 9, 11];
+        let findIndexNumbers = myNumbers.findIndex(myNumbers => myNumbers === 7);
+        document.write("<h3>Task 5: findIndex() Method:</h3>");
+        document.write("<p>" + findIndexNumbers + "</p>");
+
+        // Task 6: includes() Method
+        let myIncludeNumbers = [12, 24, 36, 48, 60];
+        let includesOfNumbers = myIncludeNumbers.includes(36);
+        document.write("<h3>Task 6: includes() Method:</h3>");
+        document.write("<p>" + includesOfNumbers + "</p>");
+
+        // Task 7: indexOf() Method
+        let myArrNumbers = [1, 2, 3, 4, 2, 5];
+        let indexOfNumbers = myArrNumbers.indexOf(2);
+        document.write("<h3>Task 7: indexOf() Method:</h3>");
+        document.write("<p>" + indexOfNumbers + "</p>");
+
+        // Task 8: lastIndexOf() Method
+        let myArrayNumbers = [1, 2, 3, 4, 2, 5];
+        let lastIndexOfNumbers = myArrayNumbers.lastIndexOf(2);
+        document.write("<h3>Task 8: lastIndexOf() Method:</h3>");
+        document.write("<p>" + lastIndexOfNumbers + "</p>");
+    </script>
+    </div>
+</body>
+
+</html>
